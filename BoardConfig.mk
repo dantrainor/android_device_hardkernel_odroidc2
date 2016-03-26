@@ -5,6 +5,7 @@ BOARD_USES_UBOOT := true
 
 # variabels required according to https://wiki.cyanogenmod.org/w/Doc:_porting_intro#BoardConfig.mk
 TARGET_ARCH := arm64
+TARGET_CPU_VARIANT := generic
 BOARD_KERNEL_CMDLINE := "root=/dev/mmcblk0p2 rw init=/init rootwait console=ttyS0,115200 hdmimode=1440x900p60hz hdmitx=cecf vout=hdmi overscan_top=0 overscan_left=0 overscan_bottom=0 overscan_right=0 logo=osd1,loaded,0x3f800000,1440x900p60hz androidboot.hardware=odroidc2 androidboot.serialno=HKC213254DFCCEF4 androidboot.selinux=disabled"
 BOARD_KERNEL_PAGESIZE := 4096
 

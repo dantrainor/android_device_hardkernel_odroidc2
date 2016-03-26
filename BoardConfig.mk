@@ -2,6 +2,7 @@
 TARGET_KERNEL_SOURCE := kernel/hardkernel/odroidc2
 TARGET_KERNEL_CONFIG := odroidc2_defconfig
 BOARD_USES_UBOOT := true
+BOARD_KERNEL_IMAGE_NAME := uImage
 
 # variabels required according to https://wiki.cyanogenmod.org/w/Doc:_porting_intro#BoardConfig.mk
 TARGET_ARCH := arm64

@@ -2,7 +2,7 @@
 TARGET_KERNEL_SOURCE := kernel/hardkernel/odroidc2
 TARGET_KERNEL_CONFIG := odroidc2_defconfig
 BOARD_USES_UBOOT := true
-BOARD_KERNEL_IMAGE_NAME := uImage
+BOARD_KERNEL_IMAGE_NAME := Image
 
 # variabels required according to https://wiki.cyanogenmod.org/w/Doc:_porting_intro#BoardConfig.mk
 TARGET_ARCH := arm64
@@ -20,3 +20,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_CPU_ABI := aarch64-linux-gnu
+
+#OTHER_MODULES:
+#	make Image dtbs modules
+#TARGET_KERNEL_MODULES := OTHER_MODULES
